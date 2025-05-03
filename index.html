@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="LandingPageStyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- DEFAULT HEADER -->  
+  <div id="header"></div>
+
+  <!-- JEAA MOTTO BOX-->
+  <div id="catchyMotto" >
+    <img src="images/jeaaLogo.png" width="398", height="110" alt="Jeaa logo">
+    <h1>UNLEASH<br>YOUR<br>POTENTIAL</h1>
+  </div>
+
+  <br><br><br><br>
+
+  <!-- WELCOMING BOX -->
+  <div id="welcome">
+    <h1>WELCOME TO JEAA</h1>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <!-- INTRODUCTION TEXT BOX -->
+  <div id="intro">
+    <p data-i18n="introText"> Introduction text </p>
+  </div>  
+
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <!-- BUTTON TO GO TO THE TEAM -->
+  <button onclick="location.href='team.html'" class="buttonTeam">JEAA TEAM</button>
+
+  <br><br><br><br><br><br><br><br><br><br> 
+
+  <!-- AREA DESCRIPTIONS -->
+  <strong id="title1" data-i18n="title1">Scopri l'area adatta a te!</strong>
+
+  <br><br><br><br><br><br>
+
+  <!-- DESIGN -->
+  <div id="designBox">
+    <div class="design-icon">
+      <img src="images/designLogo.png" alt="Design Icon">
+    </div>
+    <div class="design-text">
+      <p data-i18n="designDescription"> Area description </p>
+    </div>
+  </div>
+  
+  <br>
+
+  <!-- IT -->
+  <div id="itBox">
+    <div class="it-text">
+      <p data-i18n="itDescription"> Area description </p>
+    </div>
+    <div class="it-icon">
+      <img src="images/itLogo.png" alt="It Icon">
+    </div>
+  </div>
+  
+  <br>
+
+  <!-- MARKETING & COMMUNICATION -->
+  <div id="designBox">
+    <div class="design-icon">
+      <img src="images/marketingLogo.svg" alt="Marketing Icon">
+    </div>
+    <div class="design-text">
+      <p data-i18n="marketingDescription"> Area description </p>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- BUSINESS & SALES -->
+  <div id="itBox">
+    <div class="it-text">
+      <p data-i18n="businessDescription"> Area description </p>
+    </div>
+    <div class="it-icon">
+      <img src="images/businessLogo.svg" alt="It Icon">
+    </div>
+  </div>
+
+  <br>
+
+  <!-- HR -->
+  <div id="designBox">
+    <div class="design-icon">
+      <img src="images/hrLogo.png" alt="Audit Icon">
+    </div>
+    <div class="design-text">
+      <p data-i18n="hrDescription"> Area description </p>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- AUDIT -->
+  <div id="itBox">
+    <div class="it-text">
+      <p data-i18n="auditDescription"> Area description </p>
+    </div>
+    <div class="it-icon">
+      <img src="images/auditLogo.png" alt="It Icon">
+    </div>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br> 
+
+  <!-- BUTTON TO GO TO THE RECRUITMENT SECTION -->
+  <button onclick="location.href='recruitment.html'" class="buttonRecruitment">JEAA RECRUITMENT</button>
+
+  <br><br><br><br><br><br><br><br><br><br> 
+
+  <!-- BENEFITS TO BE IN JEAA -->
+  <strong id="title1" data-i18n="title2">Benefici</strong>
+
+  <br><br><br><br><br><br><br><br><br><br> 
+
+  <!-- STATS -->
+  <strong id="title1" data-i18n="title3">Statistiche</strong>
+
+  <br><br><br><br><br><br><br><br><br><br> 
+
+  <!-- BUTTON TO GO TO THE JEAA PORTFOLIO -->
+  <button onclick="location.href='portfolio.html'" class="buttonPortfolio">PORTFOLIO</button>
+
+  <br><br><br><br><br><br><br><br><br><br> 
+
+  <!-- EXPERIENCE OF JEAA MEMBERS -->
+  <strong id="title1" data-i18n="title4">Testimonianze</strong>
+
+  <br><br><br><br>
+
+  <div class="carousel-wrapper">
+    <div class="carousel">
+      <div class="card active">1</div>
+      <div class="card">2</div>
+      <div class="card">3</div>
+      <div class="card">4</div>
+    </div>
+  </div>
+  <div class="dots">
+    <span class="dot active" onclick="goToSlide(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+    <span class="dot" onclick="goToSlide(3)"></span>
+  </div>
+  
+  <br><br><br><br><br><br><br><br><br><br> 
+  
+  <!-- DEFAULT FOOTER -->
+  <div id="footer"></div>
+</body>
+
+<script>
+    
+    let currentIndex = 0;
+    const cards = document.querySelectorAll('.card');
+    const carousel = document.querySelector('.carousel');
+  
+    function updateCarousel() {
+      cards.forEach((card, index) => {
+        card.classList.toggle('active', index === currentIndex);
+      });
+  
+      const cardWidth = 933 + 40; 
+      const offset = cardWidth * currentIndex;
+      carousel.style.transform = `translateX(-${offset}px)`;
+
+      document.querySelectorAll('.dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    }
+
+    function goToSlide(index) {
+        currentIndex = index;
+        updateCarousel();
+    }
+
+</script>
+  
+</html>

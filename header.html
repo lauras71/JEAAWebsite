@@ -1,0 +1,133 @@
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: white;
+      font-family: sans-serif;
+      height: 100px;
+    }
+  
+    .menu {
+      display: flex;
+      gap: 3.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .menu a {
+      text-decoration: none;
+      color: #0078BF;
+      font-weight: 500;
+      position: relative;
+      font-family: 'Montserrat';
+      font-size: 16px; 
+      font-style: normal; 
+
+      padding-bottom: 10px;
+    }
+
+    .menu a::after {
+        content: '';
+        display: block;
+        height: 5px;
+        background: #85BEE0; 
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .menu a.active::after {
+      content: '';
+      display: block;
+      height: 5px;
+      background: #0078BF;
+      position: absolute;
+      width: 100%;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+    }
+
+    .lang-switcher a {
+      position: relative;
+      text-decoration: none;
+      color: #0078BF;
+      padding: 4px 0;
+      font-family: 'Montserrat';
+      font-size: 16px;  
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .lang-switcher a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #0078BF;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+    }
+
+    .lang-switcher a:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+      background: #0078BF;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+
+    <ul class="menu">
+      <li><a href="index.html" class="nav-link" data-key="home">HOME</a></li>
+      <li><a href="recruitment.html" class="nav-link" >RECRUITMENT</a></li>
+      <li><a href="team.html" class="nav-link" data-key="team">TEAM</a></li>
+    </ul>
+
+    <div class="lang-switcher">
+      <a href="#" data-lang="it">IT</a>
+      <a href="#" data-lang="de">DE</a>
+      <a href="#" data-lang="en">EN</a>
+    </div>
+      
+  </nav>
+
+</body> 
+
+<script>
+
+  const lang = new URLSearchParams(window.location.search).get("lang") || "en";
+  const path = location.pathname.split("/").pop();
+  
+  document.querySelectorAll(".lang-switcher a").forEach(link => {
+    if (link.dataset.lang === lang) {
+      link.classList.add("active");
+    }
+  });
+  
+  document.querySelectorAll(".nav-link").forEach(link => {
+    const url = new URL(link.href, location.origin);
+    url.searchParams.set("lang", lang);
+    link.href = url.toString();
+    if (link.getAttribute("href").includes(path)) {
+      link.classList.add("active");
+    }
+  });
+
+</script>
+  
