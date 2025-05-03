@@ -265,6 +265,59 @@ button {
     opacity: 1;
 }
 
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    height: 100%;
+    
+  }
+  
+  .top-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+  
+  .imgTestimonial img {
+    width: 115px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .memberInfo h2 {
+    color: #0078BF;
+    font-family: 'Montserrat';
+    font-size: 32.227px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24.17px; /* 75% */
+  }
+  
+  .memberInfo p {
+    color: #0078BF;
+    font-family: 'Montserrat';
+    font-size: 24.17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.17px; /* 100% */
+  }
+  
+  .textHistory {
+    color: #0078BF;
+    font-family: Montserrat;
+    font-size: 20.142px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 15px;
+  }
+  
+
 .dots {
     text-align: center;
     margin-top: 30px;
