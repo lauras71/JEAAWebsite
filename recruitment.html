@@ -1,17 +1,126 @@
+<!-- RECRUITMENT PAGE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Recruitment</title>
+  <link rel="icon" type="image/x-icon" href="images/logos/jeaaLogoSquare.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/recruitmentStyle.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
+
+  <!-- DEFAULT HEADER -->
   <div id="header"></div>
 
-  <main style="text-align: center; padding: 2rem;">
-    <h1 data-i18n="about_text">Default about text</h1>
-  </main>
+  <!-- DEFAULT HOME BUTTON-->
+  <div id="homeButton"></div>
 
+  <!-- DEFAULT JEAA MOTTO BOX -->
+  <div id="motto"></div>
+  
+  <br><br><br>
+  <!-- BUTTON TO APPLY -->
+  <button data-i18n="applyButton" onclick="location.href='pages/team.html'" class="buttonApplication"></button>
+  
+  <!-- START/END APPLICATION DAYS -->
+  <br><br>
+  <div class="deadlines">
+    <div data-i18n="startDate" class="deadline-box"></div>
+    <div data-i18n="endDate" class="deadline-box"></div>
+  </div>
+  
+  <br><br><br><br><br><br><br><br><br>
+  <h1 data-i18n="requisiti"></h1>
+  
+  <br><br><br>
+  
+  <!-- REQUIREMENTS LIST -->
+  <div class="requirementsList">
+    <div data-i18n="req1" id="box"></div>
+    <div data-i18n="req2" id="box"></div>
+    <div data-i18n="req3" id="box"></div>
+  </div>
+
+  <br><br><br><br><br>
+  <!-- SELECTION PROCESS -->
+  <h1 data-i18n="selection"></h1>
+
+  <br><br><br><br><br>
+  <!-- AVAILABLE POSITIONS -->
+  <h1 data-i18n="positions"></h1>
+  
+  <div class="carousel-wrapper">
+    <div class="carousel">
+
+      <div class="card active">
+        <div class="card-content">
+          DESIGN ASSOCIATE
+        </div>  
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          BUSINESS & SALES ASSOCIATE
+        </div>  
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          MARKETING ASSOCIATE
+        </div>  
+      </div>
+
+    </div>
+  </div>
+
+  <div class="dots">
+    <span class="dot active" onclick="goToSlide(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+  </div>
+
+  <br><br><br><br><br>
+  <!-- FAQ SECTION -->
+  <h1>FAQ</h1>
+
+  <br><br><br><br><br>
+  <!-- FURTHER HELP -->
+  <h1 data-i18n="help"></h1>
+
+  
+  
+  <!-- DEFAULT FOOTER -->
   <div id="footer"></div>
+
 </body>
+<script>
+    
+  let currentIndex = 0;
+  const cards = document.querySelectorAll('.card');
+  const carousel = document.querySelector('.carousel');
+
+  function updateCarousel() {
+    cards.forEach((card, index) => {
+      card.classList.toggle('active', index === currentIndex);
+    });
+
+    let offset = 0;
+    for (let l=0; l<currentIndex; l++) {
+      offset += cards[l].offsetWidth + 10;
+    }
+    carousel.style.transform = `translateX(-${offset}px)`;
+    document.querySelectorAll('.dot').forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentIndex);
+    });
+  }
+
+  function goToSlide(index) {
+      currentIndex = index;
+      updateCarousel();
+  }
+
+</script>
 </html>

@@ -1,0 +1,142 @@
+body {
+    overflow-x: hidden;
+}
+
+.buttonApplication {
+    padding: 12.5px 25px;
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    border-radius: 25px;
+    background-color: #0078BF;
+    border: none;
+    margin: auto;
+    display: flex;              
+    justify-content: center;  
+    align-items: center; 
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px  #0078BF;
+}
+
+.deadlines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: -10px; 
+}
+  
+.deadline-box {
+    padding: 5px 10px;
+    border: 1px solid #0078BF;
+    border-radius: 10px;
+    background-color: #fff;
+    line-height: normal;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+h1 {
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 88.889% */
+    margin-left: 245px;
+}
+
+.requirementsList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18.83px; 
+    margin-top: 10px;
+    margin-left: 245px;
+}
+
+#box {
+    padding: 10px 20px;
+    border: 2px solid #0078BF;
+    box-shadow: 0px 0px 10px #0078BF;
+    border-radius: 18px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 27.39px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.carousel-wrapper {
+    max-width: 100vw;
+    display: flex;
+    align-items: center;   
+    margin-left: 233px;
+    width: 100%;
+    position: relative;
+}
+  
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 10px;
+    padding: 40px 0;
+}
+  
+.card {
+    padding: 0 35px;
+    height: 72px;
+    background-color: white;
+    border-radius: 100px;
+    border: 1px solid #0078BF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.card.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.card-content {
+    display: flex;
+    height: 100%;
+    color: #0078BF;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 200% */
+  }
+
+.dots {
+    text-align: center; 
+}
+  
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    background-color: #85BEE0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.dot.active {
+    background-color: #0078BF;
+}

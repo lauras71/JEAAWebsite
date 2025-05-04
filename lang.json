@@ -24,7 +24,17 @@
       "auditDescription": "",
       "title2": "Benefits",
       "title3": "Stats",
-      "title4": "Real stories, real growth"
+      "title4": "Real stories, real growth",
+      "startDate": "APPLICATIONS OPENING: XX/XX/XXXX",
+      "endDate": "DEADLINE APPLICATIONS: XX/XX/XXXX",
+      "applyButton": "APPLY NOW!",
+      "requisiti": "Requirements",
+      "req1": "Being UniBz student",
+      "req2": "CV + portfolio for design area",
+      "req3": "Proficency in English",
+      "selection": "Selection process",
+      "positions": "Available positions",
+      "help": "Can't find your answer?"
     },
     "it": {
       "welcome": "Benvenuto!",
@@ -42,19 +52,29 @@
       "script6": "Privacy",
       "script7": "Piano 2023",
       "introText": "Unisciti a noi e diventa parte di un ponte tra università e mondo del lavoro! Offriamo agli studenti uno spazio in cui crescere, sviluppare competenze pratiche e prepararsi al meglio per le sfide professionali. Al pari di un'azienda, abbiamo un consiglio di amministrazione e delle aree operative coordinate da responsabili... Chissà, magari il prossimo potresti essere proprio tu!",
-      "designDescription": "Il team Design lavora a stretto contatto con gli altri dipartimenti per creare un’identità di brand forte e coerente, trasformando idee in contenuti visivi d’impatto. Avrai l’opportunità di arricchire il tuo portfolio con progetti reali e offrire servizi come rebranding, graphic design e molto altro.",
-      "itDescription": "Entra nella nostra area IT e metti le tue competenze alla prova in progetti concreti! Contribuisci a sviluppare la presenza digitale delle aziende clienti attraverso la creazione di siti web e soluzioni innovative. Lavorerai a stretto contatto con un team di studenti e avrai l’opportunità di proporre idee creative per ottimizzare i processi interni e far crescere l’area IT. Se vuoi sviluppare nuove competenze, affrontare sfide reali e lasciare il segno nel mondo digitale, questo è il posto giusto per te!",
-      "marketingDescription": "Unisciti all'area Marketing e Comunicazione e prendi parte attiva alla crescita del nostro brand! Avrai l’opportunità di definire la nostra identità, creando contenuti coinvolgenti, e contribuire a progetti di marketing offerti alle aziende. Se sei pronto a mettere in gioco la tua creatività, a sviluppare strategie e lanciare campagne di impatto, questa è la tua occasione!",
-      "businessDescription": "Esplora il dinamico mondo delle relazioni con i clienti e delle negoziazioni, dove avrai l’opportunità di offrire servizi economici essenziali, come ricerche di mercato e consulenza strategica fornite da JEAA. Preparati a immergerti nel settore e a creare soluzioni su misura per i clienti, affinando le loro strategie aziendali e favorendone la crescita.",
+      "designDescription": "Il team Design lavora a stretto contatto con gli altri dipartimenti per creare un'identità di brand forte e coerente, trasformando idee in contenuti visivi d'impatto. Avrai l'opportunità di arricchire il tuo portfolio con progetti reali e offrire servizi come rebranding, graphic design e molto altro.",
+      "itDescription": "Entra nella nostra area IT e metti le tue competenze alla prova in progetti concreti! Contribuisci a sviluppare la presenza digitale delle aziende clienti attraverso la creazione di siti web e soluzioni innovative. Lavorerai a stretto contatto con un team di studenti e avrai l'opportunità di proporre idee creative per ottimizzare i processi interni e far crescere l'area IT. Se vuoi sviluppare nuove competenze, affrontare sfide reali e lasciare il segno nel mondo digitale, questo è il posto giusto per te!",
+      "marketingDescription": "Unisciti all'area Marketing e Comunicazione e prendi parte attiva alla crescita del nostro brand! Avrai l'opportunità di definire la nostra identità, creando contenuti coinvolgenti, e contribuire a progetti di marketing offerti alle aziende. Se sei pronto a mettere in gioco la tua creatività, a sviluppare strategie e lanciare campagne di impatto, questa è la tua occasione!",
+      "businessDescription": "Esplora il dinamico mondo delle relazioni con i clienti e delle negoziazioni, dove avrai l'opportunità di offrire servizi economici essenziali, come ricerche di mercato e consulenza strategica fornite da JEAA. Preparati a immergerti nel settore e a creare soluzioni su misura per i clienti, affinando le loro strategie aziendali e favorendone la crescita.",
       "hrDescription": "Il team HR svolge un ruolo chiave nella valorizzazione delle risorse interne di JEAA, e promuovere un ambiente di lavoro collaborativo e stimolante. Immergiti nella pianificazione del processo di. reclutamento, nella gestione delle risorse e nelle iniziative interne, come attività di team building e programmi di formazione.",
       "auditDescription": "Il team HR svolge un ruolo chiave nella valorizzazione delle risorse interne di JEAA, e promuovere un ambiente di lavoro collaborativo e stimolante. Immergiti nella pianificazione del processo di. reclutamento, nella gestione delle risorse e nelle iniziative interne, come attività di team building e programmi di formazione.",
       "title2": "Benefici",
       "title3": "Statistiche",
       "title4": "Testimonianze",
-      "textHistoryCosti": "JEAA è stata ed è ancora un'esperienza che mi ha offerto numerose opportunità di crescita. Tra queste, la più significativa è sicuramente il grande networking che mi ha permesso di sviluppare. Ho avuto la possibilità di entrare in contatto con molti colleghi universitari, ognuno con un background unico, che ha arricchito l’esperienza con una diversità insostituibile. Il continuo confronto e scambio di idee e prospettive con i miei colleghi, mi ha permesso di ampliare il mio orizzonte sia professionale che personale. Inoltre, la JEAA rappresenta una vera e propria introduzione al mondo del lavoro, un'occasione che ti responsabilizza e ti prepara a comprendere dinamiche lavorative concrete e complesse. Grazie a questa esperienza, ho potuto sviluppare competenze pratiche che vanno ben oltre la teoria, acquisendo consapevolezza di ciò che significa lavorare in un team e affrontare sfide reali.",
-      "textHistoryStefano": "Durante la mia esperienza in JEAA, ho avuto l’opportunità di collaborare con persone dalle personalità diverse, tutte accomunate da una forte motivazione. Ciò che mi ha colpito maggiormente è stato l’entusiasmo con cui trasformavamo le idee in azioni concrete: proponevamo iniziative, le pianificavamo con attenzione e riuscivamo rapidamente a raggiungere traguardi significativi. Da ciò ho osservato da vicino il valore del lavoro di squadra e dell’approccio proattivo, ponendo le basi per la mia futura crescita personale e professionale.",
-      "textHistoryAmanzio": "Essere parte dell’area Marketing e Communication di JEAA è stato un’esperienza incredibile, sia sotto il profilo professionale che personale. I legami con l’Associazione e il network che la circonda mi hanno dato la possibilità di conoscere meglio me stessa, di interagire con persone straordinarie e di crescere in un ambiente stimolante. Grazie a queste opportunità, sono riuscita a fare esperienza lavorativa prima ancora di terminare i miei studi.",
-      "textHistoryEleonora": "Grazie a JEAA, ho potuto imparare le basi del web design da zero e approfondire l'uso di strumenti come Figma. Questa esperienza si è rivelata per me un'opportunità incredibile per mettermi alla prova e acquisire competenze concrete in un contesto lavorativo reale. Ho avuto la possibilità di uscire dalla mia zona di comfort, ampliando le mie conoscenze, e allo stesso tempo di incontrare persone straordinarie all'interno del network. In particolare, il progetto Alpengarten è stato fondamentale per la mia crescita professionale, permettendomi di imparare come comunicare efficacemente con i clienti e affrontare problemi che prima mi erano nuovi. Grazie a questa esperienza, ho sviluppato una solida comprensione di come gestire le relazioni con i clienti e con il mio team e risolvere le problematiche che conseguono a tali rapporti."
+      "textHistoryCosti": "JEAA è stata ed è ancora un'esperienza che mi ha offerto numerose opportunità di crescita. Tra queste, la più significativa è sicuramente il grande networking che mi ha permesso di sviluppare. Ho avuto la possibilità di entrare in contatto con molti colleghi universitari, ognuno con un background unico, che ha arricchito l'esperienza con una diversità insostituibile. Il continuo confronto e scambio di idee e prospettive con i miei colleghi, mi ha permesso di ampliare il mio orizzonte sia professionale che personale. Inoltre, la JEAA rappresenta una vera e propria introduzione al mondo del lavoro, un'occasione che ti responsabilizza e ti prepara a comprendere dinamiche lavorative concrete e complesse. Grazie a questa esperienza, ho potuto sviluppare competenze pratiche che vanno ben oltre la teoria, acquisendo consapevolezza di ciò che significa lavorare in un team e affrontare sfide reali.",
+      "textHistoryStefano": "Durante la mia esperienza in JEAA, ho avuto l'opportunità di collaborare con persone dalle personalità diverse, tutte accomunate da una forte motivazione. Ciò che mi ha colpito maggiormente è stato l'entusiasmo con cui trasformavamo le idee in azioni concrete: proponevamo iniziative, le pianificavamo con attenzione e riuscivamo rapidamente a raggiungere traguardi significativi. Da ciò ho osservato da vicino il valore del lavoro di squadra e dell'approccio proattivo, ponendo le basi per la mia futura crescita personale e professionale.",
+      "textHistoryAmanzio": "Essere parte dell'area Marketing e Communication di JEAA è stato un'esperienza incredibile, sia sotto il profilo professionale che personale. I legami con l'Associazione e il network che la circonda mi hanno dato la possibilità di conoscere meglio me stessa, di interagire con persone straordinarie e di crescere in un ambiente stimolante. Grazie a queste opportunità, sono riuscita a fare esperienza lavorativa prima ancora di terminare i miei studi.",
+      "textHistoryEleonora": "Grazie a JEAA, ho potuto imparare le basi del web design da zero e approfondire l'uso di strumenti come Figma. Questa esperienza si è rivelata per me un'opportunità incredibile per mettermi alla prova e acquisire competenze concrete in un contesto lavorativo reale. Ho avuto la possibilità di uscire dalla mia zona di comfort, ampliando le mie conoscenze, e allo stesso tempo di incontrare persone straordinarie all'interno del network. In particolare, il progetto Alpengarten è stato fondamentale per la mia crescita professionale, permettendomi di imparare come comunicare efficacemente con i clienti e affrontare problemi che prima mi erano nuovi. Grazie a questa esperienza, ho sviluppato una solida comprensione di come gestire le relazioni con i clienti e con il mio team e risolvere le problematiche che conseguono a tali rapporti.",
+      "startDate": "APERTURA DOMANDA: XX/XX/XXXX",
+      "endDate": "FINE DOMANDA: XX/XX/XXXX",
+      "applyButton": "CANDIDATI ORA!",
+      "requisiti": "Requisiti",
+      "req1": "Essere studenti UniBz",
+      "req2": "CV + portfolio se area design",
+      "req3": "Conoscenza inglese",
+      "selection": "Processo di selezione",
+      "positions": "Posizioni aperte",
+      "help": "Non trovi la tua domanda?"
     },
     "de": {
       "welcome": "Willkommen!",
@@ -81,7 +101,15 @@
       "auditDescription": "",
       "title2": "Vorteile",
       "title3": "",
-      "title4": "Erfahrungen"
+      "title4": "Erfahrungen",
+      "applyButton": "BEWIRB DICH JETZT!",
+      "requisiti": "Anforderungen", 
+      "req1": "UniBz Student sein",
+      "req2": "CV + Portfolio für Design Bereich",
+      "req3": "Englischkenntnisse",
+      "selection": "Auswahlverfahren",
+      "positions": "Offene Positionen",
+      "help": "Ihre Frage ist nicht dabei?"
     }
 }
   

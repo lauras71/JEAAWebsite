@@ -1,10 +1,12 @@
+<!-- LANDING PAGE OF THE WEBSITE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="LandingPageStyle.css">
+  <title>Home page</title>
+  <link rel="stylesheet" href="style/homeStyle.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/logos/jeaaLogoSquare.png">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -12,11 +14,15 @@
   <!-- DEFAULT HEADER -->  
   <div id="header"></div>
 
-  <!-- JEAA MOTTO BOX-->
+  <!-- DEAFAULT JEAA MOTTO BOX-->
+  <div id="motto"></div>
+ 
+  <!--
   <div id="catchyMotto" >
     <img src="images/jeaaLogo.png" width="398", height="110" alt="Jeaa logo">
     <h1>UNLEASH<br>YOUR<br>POTENTIAL</h1>
   </div>
+  -->
 
   <br><br><br><br>
 
@@ -47,7 +53,7 @@
   <!-- DESIGN -->
   <div id="designBox">
     <div class="design-icon">
-      <img src="images/designLogo.png" alt="Design Icon">
+      <img src="images/logos/designLogo.png" alt="Design Icon">
     </div>
     <div class="design-text">
       <p data-i18n="designDescription"> Area description </p>
@@ -62,7 +68,7 @@
       <p data-i18n="itDescription"> Area description </p>
     </div>
     <div class="it-icon">
-      <img src="images/itLogo.png" alt="It Icon">
+      <img src="images/logos/itLogo.png" alt="It Icon">
     </div>
   </div>
   
@@ -71,7 +77,7 @@
   <!-- MARKETING & COMMUNICATION -->
   <div id="designBox">
     <div class="design-icon">
-      <img src="images/marketingLogo.svg" alt="Marketing Icon">
+      <img src="images/logos/marketingLogo.svg" alt="Marketing Icon">
     </div>
     <div class="design-text">
       <p data-i18n="marketingDescription"> Area description </p>
@@ -86,7 +92,7 @@
       <p data-i18n="businessDescription"> Area description </p>
     </div>
     <div class="it-icon">
-      <img src="images/businessLogo.svg" alt="It Icon">
+      <img src="images/logos/businessLogo.svg" alt="It Icon">
     </div>
   </div>
 
@@ -95,7 +101,7 @@
   <!-- HR -->
   <div id="designBox">
     <div class="design-icon">
-      <img src="images/hrLogo.png" alt="Audit Icon">
+      <img src="images/logos/hrLogo.png" alt="Audit Icon">
     </div>
     <div class="design-text">
       <p data-i18n="hrDescription"> Area description </p>
@@ -110,7 +116,7 @@
       <p data-i18n="auditDescription"> Area description </p>
     </div>
     <div class="it-icon">
-      <img src="images/auditLogo.png" alt="It Icon">
+      <img src="images/logos/auditLogo.png" alt="It Icon">
     </div>
   </div>
 
@@ -148,7 +154,7 @@
         <div class="card-content">
             <div class="top-section">
                 <div class="imgTestimonial">
-                    <img src="images/costiHistory.png" />
+                    <img src="images/testimonial/costiHistory.png" />
                 </div> 
                 <div class="memberInfo">
                     <h2>Costanza Massaro</h2>
@@ -165,7 +171,7 @@
         <div class="card-content">
             <div class="top-section">
                 <div class="imgTestimonial">
-                    <img src="images/stefanoHistory.png" />
+                    <img src="images/testimonial/stefanoHistory.png" />
                 </div> 
                 <div class="memberInfo">
                     <h2>Stefano Paredes</h2>
@@ -182,7 +188,7 @@
         <div class="card-content">
             <div class="top-section">
                 <div class="imgTestimonial">
-                    <img src="images/eleonoraHistory.png" />
+                    <img src="images/testimonial/eleonoraHistory.png" />
                 </div> 
                 <div class="memberInfo">
                     <h2>Eleonora Amanzio</h2>
@@ -199,7 +205,7 @@
         <div class="card-content">
             <div class="top-section">
                 <div class="imgTestimonial">
-                    <img src="images/eleonoraDesignHistory.png" />
+                    <img src="images/testimonial/eleonoraDesignHistory.png" />
                 </div> 
                 <div class="memberInfo">
                     <h2>Eleonora Dal Cin</h2>
@@ -228,29 +234,29 @@
 </body>
 
 <script>
-    
-    let currentIndex = 0;
-    const cards = document.querySelectorAll('.card');
-    const carousel = document.querySelector('.carousel');
   
-    function updateCarousel() {
-      cards.forEach((card, index) => {
-        card.classList.toggle('active', index === currentIndex);
-      });
+  let currentIndex = 0;
+  const cards = document.querySelectorAll('.card');
+  const carousel = document.querySelector('.carousel');
   
-      const cardWidth = 933 + 40; 
-      const offset = cardWidth * currentIndex;
-      carousel.style.transform = `translateX(-${offset}px)`;
+  function updateCarousel() {
+    cards.forEach((card, index) => {
+      card.classList.toggle('active', index === currentIndex);
+    });
+  
+    const cardWidth = 933 + 40; 
+    const offset = cardWidth * currentIndex;
+    carousel.style.transform = `translateX(-${offset}px)`;
 
-      document.querySelectorAll('.dot').forEach((dot, i) => {
-        dot.classList.toggle('active', i === currentIndex);
-      });
-    }
+    document.querySelectorAll('.dot').forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentIndex);
+    });
+  }
 
-    function goToSlide(index) {
-        currentIndex = index;
-        updateCarousel();
-    }
+  function goToSlide(index) {
+    currentIndex = index;
+    updateCarousel();
+  }
 
 </script>
   

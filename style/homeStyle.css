@@ -1,32 +1,6 @@
 body {
     overflow-x: hidden;
-}
-  
-#catchyMotto {
-    background-color: #ffff;
-    width: 1264px;
-    height: 264px;
-    border: 1px solid #0078BF;
-    padding: 50px;
-    border-radius: 167px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    margin: 0 auto;
-    margin-top: 150px;
-}
-
-#catchyMotto h1 {
-    color: #0078BF;
-    font-family: 'Montserrat';
-    font-size: 90px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 72px; 
-    margin: 0;
-}
+}   
 
 #welcome {
     width: 497px;
@@ -74,10 +48,12 @@ body {
     margin-right: 50px;
 }
 
+button {
+    box-shadow: 0px 0px 10px  #0078BF;
+    padding: 15px 35px;
+}
 
 .buttonTeam {
-    width: 322px;
-    height: 74px;
     color: #FFF;
     font-family: Montserrat;
     font-size: 40px;
@@ -96,8 +72,6 @@ body {
 }
 
 .buttonRecruitment {
-    width: 509px;
-    height: 74px;
     color: #FFF;
     font-family: Montserrat;
     font-size: 40px;
@@ -205,8 +179,6 @@ body {
 }
 
 .buttonPortfolio {
-    width: 322px;
-    height: 74px;
     color: #FFF;
     font-family: Montserrat;
     font-size: 40px;
@@ -222,10 +194,6 @@ body {
     align-items: center; 
     text-decoration: none;
     cursor: pointer;
-}
-
-button {
-    box-shadow: 0px 0px 10px  #0078BF;
 }
 
 .carousel-wrapper {
@@ -270,52 +238,51 @@ button {
     flex-direction: column;
     padding: 40px;
     height: 100%;
-    
-  }
+}
   
-  .top-section {
+.top-section {
     display: flex;
     align-items: center;
     gap: 60px;
     margin-bottom: 20px;
     margin-top: 50px;
     margin-left: 15px;
-  }
+}
   
-  .imgTestimonial img {
+.imgTestimonial img {
     width: 115px;
     height: 115px;
     object-fit: cover;
     border-radius: 20px;
-  }
+}
   
-  .memberInfo h2 {
+.memberInfo h2 {
     color: #0078BF;
     font-family: 'Montserrat';
     font-size: 32.227px;
     font-style: normal;
     font-weight: 600;
     line-height: 24.17px; /* 75% */
-  }
+}
   
-  .memberInfo p {
+.memberInfo p {
     color: #0078BF;
     font-family: 'Montserrat';
     font-size: 24.17px;
     font-style: normal;
     font-weight: 400;
     line-height: 24.17px; /* 100% */
-  }
+}
   
-  .textHistory {
+.textHistory {
     color: #0078BF;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 20.142px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-left: 15px;
-  }
+}
   
 
 .dots {

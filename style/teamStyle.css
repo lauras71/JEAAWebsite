@@ -1,0 +1,18 @@
+#teamAreas {
+    color: #0078BF;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 94.568px; /* 157.614% */
+    margin-left: 241px;
+}
+
+#membersPic {
+    width: 300px;
+    height: 520px;
+}
+
+.board {
+    margin-left: 231px;
+}

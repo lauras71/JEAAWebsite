@@ -3,8 +3,8 @@ window.addEventListener("DOMContentLoaded", () => {
       
     // Load header, footer, then run translation
     Promise.all([
-        loadHTML("header.html", "#header"),
-        loadHTML("footer.html", "#footer")
+        loadHTML("reusableComponents/header.html", "#header"),
+        loadHTML("reusableComponents/footer.html", "#footer"),
     ]).then(() => {
         return fetch("lang.json");
     }).then(res => res.json())
@@ -43,6 +43,12 @@ window.addEventListener("DOMContentLoaded", () => {
                 link.classList.add("active");
             }
         });
+
+        document.querySelectorAll(".lang-switcher a").forEach(link => {
+            if (link.getAttribute("href").includes(path)) {
+                link.classList.add("active");
+            }
+        });
     });
 });
       
@@ -53,5 +59,8 @@ function loadHTML(path, selector) {
         document.querySelector(selector).innerHTML = html;
     });
 }
+
+loadHTML("reusableComponents/motto.html", "#motto"),
+loadHTML("reusableComponents/homeButton.html", "#homeButton")
       
   

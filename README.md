@@ -12,5 +12,5 @@ All other .html files handle the different pages that can be visualized in the w
 
 ## Basic guidelines
 * before starting working on the project, please create your own branch in order not to modify directly the main branch
-* always give logic and clear names to files, variables and html classes or ids.
+* always give clear and understandable names to files, variables and html classes or ids.
 * always comment the code so that other members can understand your work easily 
