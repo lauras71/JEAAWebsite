@@ -41,7 +41,8 @@
       "step3": "Interview",
       "descr3": "Show you motivation and skills!",
       "step4": "Group interview",
-      "descr4": "We are a team and, as such, we would like to test how well you work in groups. Show off you talent!"
+      "descr4": "We are a team and, as such, we would like to test how well you work in groups. Show off you talent!",
+      "collab": "who we worked with so far"
     },
     "it": {
       "welcome": "Benvenuto!",
@@ -88,7 +89,8 @@
       "step3": "Interview",
       "descr3": "Mostra la tua motivazione e dimostra le tue competenze!",
       "step4": "Interview di gruppo",
-      "descr4": "Siamo un team e vogliamo vedere come lavori in gruppo di fronte a una sfida.Mostraci il tuo valore!"
+      "descr4": "Siamo un team e vogliamo vedere come lavori in gruppo di fronte a una sfida.Mostraci il tuo valore!",
+      "collab": "con chi abbiamo lavorato fino ad ora"
     },
     "de": {
       "welcome": "Willkommen!",
@@ -123,7 +125,8 @@
       "req3": "Englischkenntnisse",
       "selection": "Auswahlverfahren",
       "positions": "Offene Positionen",
-      "help": "Ihre Frage ist nicht dabei?"
+      "help": "Ihre Frage ist nicht dabei?",
+      "collab": "mit wem wir bisher gearbeitet haben"
     }
 }
   

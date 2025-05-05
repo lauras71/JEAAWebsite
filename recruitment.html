@@ -50,7 +50,7 @@
 
   <div class="timeline-container">
     <div class="timeline">
-      
+      <div class="progress-line"></div>
       <div class="step-wrapper">
         <div class="step active" data-step="1"></div>
         <div class="step-text visible" id="text-1">
@@ -124,8 +124,26 @@
   </div>
 
   <br><br><br><br><br>
+  <!-- COLLAB SECTION -->
+  <h4 data-i18n="collab"></h4>
+
+  <div class="collaboration">
+    <div class="row">
+      <img src="images/partners/elis.png" />
+      <img src="images/partners/slushd.png"/>
+      <img src="images/partners/loacker.png" />
+    </div>
+    <br><br><br>
+    <div class="row">
+      <img src="images/partners/wedigital.png" />
+      <img src="images/partners/gianniBio.png" />
+      <img src="images/partners/coopbund.png" />
+    </div>
+  </div>
+
+  <br><br><br><br><br>
   <!-- FAQ SECTION -->
-  <h1>FAQ</h1>
+  <h1 id="faqAnchor">FAQ</h1>
 
   <br><br><br><br><br>
   <!-- FURTHER HELP -->
@@ -165,12 +183,14 @@
 
 </script>
 <script>
+window.addEventListener("load", () => {
   const steps = document.querySelectorAll(".step");
   const texts = document.querySelectorAll(".step-text");
+  const line = document.querySelector(".progress-line");
 
   steps.forEach((step, index) => {
     step.addEventListener("click", () => {
-      // Attiva i pallini fino a quello cliccato
+      // Show/hide steps and texts
       steps.forEach((s, i) => {
         if (i <= index) {
           s.classList.add("active");
@@ -180,8 +200,26 @@
           texts[i].classList.remove("visible");
         }
       });
+
+      // Grow the line between first and clicked step
+      if (index > 0) {
+        const gap = 10;
+        const start = steps[0].getBoundingClientRect().left;
+        const end = steps[index].getBoundingClientRect().left;
+         // adjust to control spacing
+        const width = end - start - gap * 2;
+        line.style.width = `${width}px`;
+        line.style.left = `${steps[0].offsetLeft + gap}px`;
+        
+      } else {
+        line.style.width = "0px";
+      }
+
     });
   });
+});
 </script>
+
+
 
 </html>

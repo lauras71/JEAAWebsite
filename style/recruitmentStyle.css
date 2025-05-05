@@ -209,4 +209,41 @@ h1 {
     font-weight: 500;
     line-height: normal;
   }
+
+  .progress-line {
+    position: absolute;
+    top: 20px; /* vertically center it with the circles */
+    height: 5px;
+    background-color: #0078BF;
+    border-radius: 2px;
+    z-index: 1;
+    transition: width 0.3s ease, left 0.3s ease;
+    border-radius: 17px;
+  }
+
+  h4 {
+    color: #0078BF;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .collaboration {
+    margin-top: 57px;
+    margin-left: 460px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 90.68px;
+    align-items: center;
+  }
+
+  
+  
+  
   
