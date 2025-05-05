@@ -48,6 +48,41 @@
   <!-- SELECTION PROCESS -->
   <h1 data-i18n="selection"></h1>
 
+  <div class="timeline-container">
+    <div class="timeline">
+      
+      <div class="step-wrapper">
+        <div class="step active" data-step="1"></div>
+        <div class="step-text visible" id="text-1">
+          <h3 data-i18n="step1"></h3>
+          <p data-i18n="descr1"></p>
+        </div>
+      </div>
+      <div class="step-wrapper">
+        <div class="step" data-step="2"></div>
+        <div class="step-text" id="text-2">
+          <h3 data-i18n="step2"></h3>
+        </div>
+      </div>
+      <div class="step-wrapper">
+        <div class="step" data-step="3"></div>
+        <div class="step-text" id="text-3">
+          <h3 data-i18n="step3"></h3>
+          <p data-i18n="descr3"></p>
+        </div>
+      </div>
+      <div class="step-wrapper">
+        <div class="step" data-step="4"></div>
+        <div class="step-text" id="text-4">
+          <h3 data-i18n="step4"></h3>
+          <p data-i18n="descr4"></p>
+        </div>
+      </div>
+  
+      
+    </div>
+  </div>
+  
   <br><br><br><br><br>
   <!-- AVAILABLE POSITIONS -->
   <h1 data-i18n="positions"></h1>
@@ -55,23 +90,29 @@
   <div class="carousel-wrapper">
     <div class="carousel">
 
-      <div class="card active">
-        <div class="card-content">
-          DESIGN ASSOCIATE
-        </div>  
-      </div>
+      <a class="link" href="designRecruitment.html">
+        <div class="card active">
+          <div class="card-content">
+            DESIGN ASSOCIATE
+          </div>  
+        </div>
+      </a>
 
-      <div class="card">
-        <div class="card-content">
-          BUSINESS & SALES ASSOCIATE
-        </div>  
-      </div>
-
-      <div class="card">
-        <div class="card-content">
-          MARKETING ASSOCIATE
-        </div>  
-      </div>
+      <a class="link" href="b&sRecruitment.html">
+        <div class="card">
+          <div class="card-content">
+            BUSINESS & SALES ASSOCIATE
+          </div>  
+        </div>
+      </a>
+      
+      <a class="link" href="marketingRecruitment.html">
+        <div class="card">
+          <div class="card-content">
+            MARKETING ASSOCIATE
+          </div>  
+        </div>
+      </a>
 
     </div>
   </div>
@@ -123,4 +164,24 @@
   }
 
 </script>
+<script>
+  const steps = document.querySelectorAll(".step");
+  const texts = document.querySelectorAll(".step-text");
+
+  steps.forEach((step, index) => {
+    step.addEventListener("click", () => {
+      // Attiva i pallini fino a quello cliccato
+      steps.forEach((s, i) => {
+        if (i <= index) {
+          s.classList.add("active");
+          texts[i].classList.add("visible");
+        } else {
+          s.classList.remove("active");
+          texts[i].classList.remove("visible");
+        }
+      });
+    });
+  });
+</script>
+
 </html>

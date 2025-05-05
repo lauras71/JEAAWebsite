@@ -45,8 +45,10 @@ window.addEventListener("DOMContentLoaded", () => {
         });
 
         document.querySelectorAll(".lang-switcher a").forEach(link => {
-            if (link.getAttribute("href").includes(path)) {
+            if (link.dataset.lang === lang) {
                 link.classList.add("active");
+            } else {
+                link.classList.remove("active");
             }
         });
     });

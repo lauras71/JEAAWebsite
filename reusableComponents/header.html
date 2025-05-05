@@ -17,7 +17,7 @@
       gap: 3.5rem;
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin-left: 10px;
     }
   
     .menu a {
@@ -31,15 +31,32 @@
       padding-bottom: 10px;
     }
 
+    .menu a.active {
+      font-weight: 700;
+    }
+
     .menu a::after {
-        content: '';
-        display: block;
-        height: 5px;
-        background: #85BEE0; 
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+      content: '';
+      display: block;
+      height: 5px;
+      background: #85BEE0;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 74px;
+    }
+
+    .menu li:nth-child(2) a::after {
+      content: '';
+      display: block;
+      height: 5px;
+      background: #85BEE0;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 193px;
     }
 
     .menu a.active::after {
@@ -48,45 +65,68 @@
       height: 5px;
       background: #0078BF;
       position: absolute;
-      width: 100%;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 74px;
+    }
+
+    .menu li:nth-child(2) a.active::after {
+      content: '';
+      display: block;
+      height: 5px;
+      background: #0078BF;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 193px;
     }
 
     .lang-switcher {
+      position: relative;
       display: flex;
       gap: 1rem;
       justify-content: flex-end;
     }
 
     .lang-switcher a {
-      position: relative;
       text-decoration: none;
       color: #0078BF;
-      padding: 4px 0;
-      font-family: 'Montserrat';
-      font-size: 16px;  
       font-weight: 500;
-      transition: color 0.3s;
+      position: relative;
+      font-family: 'Montserrat';
+      font-size: 16px; 
+      font-style: normal; 
       padding-bottom: 10px;
+    }
+
+    .lang-switcher a.active {
+      font-weight: 700;
     }
 
     .lang-switcher a::after {
       content: '';
       display: block;
       height: 5px;
-      background: #85BEE0; 
+      background: #85BEE0;
       position: absolute;
       bottom: 0;
-      left: 0;
-      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
     }
 
     .lang-switcher a.active::after {
       content: '';
       display: block;
       height: 5px;
-      background: #85BEE0;
+      background: #0078BF;
       position: absolute;
-      width: 100%;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
     }
 
   </style>
@@ -102,14 +142,16 @@
     </ul>
 
     <div class="lang-switcher">
-      <a href="#" data-lang="it">IT</a>
-      <a href="#" data-lang="de">DE</a>
-      <a href="#" data-lang="en">EN</a>
+      <a href="?lang=it" data-lang="it">IT</a>
+      <a href="?lang=de" data-lang="de">DE</a>
+      <a href="?lang=en" data-lang="en">EN</a>
     </div>
       
   </nav>
 
 </body> 
+
+
 
 <script>
 
@@ -119,7 +161,7 @@
   document.querySelectorAll(".lang-switcher a").forEach(link => {
     if (link.dataset.lang === lang) {
       link.classList.add("active");
-    }
+    } 
   });
   
   document.querySelectorAll(".nav-link").forEach(link => {

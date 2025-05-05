@@ -140,3 +140,73 @@ h1 {
 .dot.active {
     background-color: #0078BF;
 }
+
+.link {
+    text-decoration: none;
+}
+
+
+.timeline-container {
+    margin-left: 245px; 
+    padding-top: 123px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .timeline {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .step-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-right: 120px; /* spazio fisso tra i pallini */
+    width: 240px; /* larghezza fissa per ogni "colonna" */
+    flex-shrink: 0; /* evita che si restringano */
+  }
+  
+  .step {
+    width: 44.344px;
+    height: 44.344px;
+    border: 1px solid #0078BF;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .step.active {
+    background-color: #0078BF;
+  }
+  
+  .step-text {
+    margin-top: 15px;
+    max-width: 220px;
+    display: none;
+    text-align: left; 
+  }
+  
+  .step-text.visible {
+    display: block;
+  }
+  
+  .step-text h3 {
+    color: #1578BE;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 54.687px; /* 273.436% */
+    
+  }
+
+  .step-text p {
+    color: #000;
+    font-size: 15.95px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  

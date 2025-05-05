@@ -34,7 +34,14 @@
       "req3": "Proficency in English",
       "selection": "Selection process",
       "positions": "Available positions",
-      "help": "Can't find your answer?"
+      "help": "Can't find your answer?",
+      "step1": "Choose the area",
+      "descr1": "Choose the area you wish to apply for and show you motivation! Remember that a CV is needed and if you apply for the Design area, also a Portfolio is requested.",
+      "step2": "Fill out the form",
+      "step3": "Interview",
+      "descr3": "Show you motivation and skills!",
+      "step4": "Group interview",
+      "descr4": "We are a team and, as such, we would like to test how well you work in groups. Show off you talent!"
     },
     "it": {
       "welcome": "Benvenuto!",
@@ -74,7 +81,14 @@
       "req3": "Conoscenza inglese",
       "selection": "Processo di selezione",
       "positions": "Posizioni aperte",
-      "help": "Non trovi la tua domanda?"
+      "help": "Non trovi la tua domanda?",
+      "step1": "Scegli l'area",
+      "descr1": "Scegli l'area per cui vuoi candidarti e mostra la tua motivazione! Tieni presente che è richiesto un CV e, se ti candidi per l'area Design, è necessario anche un Portfolio.",
+      "step2": "Compila il form",
+      "step3": "Interview",
+      "descr3": "Mostra la tua motivazione e dimostra le tue competenze!",
+      "step4": "Interview di gruppo",
+      "descr4": "Siamo un team e vogliamo vedere come lavori in gruppo di fronte a una sfida.Mostraci il tuo valore!"
     },
     "de": {
       "welcome": "Willkommen!",
