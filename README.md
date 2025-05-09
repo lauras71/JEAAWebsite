@@ -31,6 +31,7 @@ When you change some files and you would like to make them visible to everyone, 
 * _git status_: command to check which files have been modified
 * _git add <nameOfFile>_: command to add a specific file to the staging and committing process
 * _git add ._: command to commit all modified files
+* _git commit -m "<yourMessageGoesHere>"_: command to commit and leave a commit message
 * _git push origin <yourBranchName>_: command to push your work in your branch
 * _git checkout main_: command to switch to the _main_ branch
 * _git pull origin <yourBranchName>_: command to take the changes just pushed in your branch
