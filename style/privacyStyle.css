@@ -1,34 +1,38 @@
-.goBack {
-    display: block;
-    margin: 0 auto;
-}
+@media (min-width: 1024px) {   
 
-::-webkit-scrollbar {
-    display: none;
-}
+    .goBack {
+        display: block;
+        margin: 0 auto;
+    }
 
-.privacyBody {
-    margin: 50px 250px;
-    text-align: justify;
-}
+    ::-webkit-scrollbar {
+        display: none;
+    }
 
-.privacyTitle {
-    font-family: 'Montserrat';
-    font-size: 28px;
-    font-weight: 700;
-    color: #0078BF;
-}
+    .privacyBody {
+        margin: 50px 250px;
+        text-align: justify;
+    }
 
-.privacyParagraph {
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
-}
+    .privacyTitle {
+        font-family: 'Montserrat';
+        font-size: 28px;
+        font-weight: 700;
+        color: #0078BF;
+    }
 
-ul {
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
-}
+    .privacyParagraph {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+    }
+
+    ul {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+    }
+
+}    
