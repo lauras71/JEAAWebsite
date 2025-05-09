@@ -16,13 +16,6 @@
 
   <!-- DEAFAULT JEAA MOTTO BOX-->
   <div id="motto"></div>
- 
-  <!--
-  <div id="catchyMotto" >
-    <img src="images/jeaaLogo.png" width="398", height="110" alt="Jeaa logo">
-    <h1>UNLEASH<br>YOUR<br>POTENTIAL</h1>
-  </div>
-  -->
 
   <br><br><br><br>
 
@@ -228,6 +221,68 @@
   </div>
   
   <br><br><br><br><br><br><br><br><br><br> 
+
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="main-panel" id="main-panel">
+      <div class="rowCookie">
+        <h2 text-align="center">Cookie policy</h2>
+        <img src="images/cookie.png" />
+      </div>
+      <p data-i18n="pCookie">We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+      <div class="button-row">
+        <button data-i18n="customize" class="cookie-button btn-customize" onclick="showCustomize()">Customize</button>
+        <button data-i18n="allow" class="cookie-button btn-allow" onclick="acceptAll()">Allow all</button>
+        <button data-i18n="decline" class="cookie-button btn-decline" onclick="declineAll()">Decline all</button>
+      </div>
+      <div class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="impressum.html">Impressum</a>
+      </div>
+    </div>
+  
+    <div class="customize-panel" id="customize-panel">
+      <div data-i18n="preference" class="back-button" onclick="showMain()">Customize your preferences</div>
+      <div class="toggle-row">
+        <span data-i18n="necessary">Necessary</span>
+        <label class="toggle-switch">
+          <input type="checkbox" checked disabled>
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="toggle-row">
+        <span data-i18n="functionality">Functionality</span>
+        <label class="toggle-switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="toggle-row">
+        <span data-i18n="statistics">Statistics</span>
+        <label class="toggle-switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="toggle-row">
+        <span>Marketing</span>
+        <label class="toggle-switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <button data-i18n="save" class="save-button" onclick="savePreferences()">Save preferences</button>
+    </div>
+  </div>
+
+  <div id="settings-button" style="display: none;">
+    ⚙️
+  </div>
+  
+  
+
+
+  
+  
   
   <!-- DEFAULT FOOTER -->
   <div id="footer"></div>
@@ -259,5 +314,60 @@
   }
 
 </script>
-  
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  const banner = document.getElementById('cookie-banner');
+  const settings = document.getElementById('settings-button');
+
+  if (localStorage.getItem('cookieChoiceMade') === 'true') {
+    banner.style.display = 'none';
+    settings.style.display = 'flex';
+  } else {
+    banner.style.display = 'block';
+    settings.style.display = 'none';
+  }
+});
+
+  const mainPanel = document.getElementById('main-panel');
+  const customizePanel = document.getElementById('customize-panel');
+
+  function hideBannerAndShowSettings() {
+    document.getElementById('cookie-banner').style.display = 'none';
+    document.getElementById('settings-button').style.display = 'flex';
+  }
+
+  function showCustomize() {
+    mainPanel.style.display = 'none';
+    customizePanel.style.display = 'flex';
+  }
+
+  function showMain() {
+    customizePanel.style.display = 'none';
+    mainPanel.style.display = 'block';
+  }
+
+  function acceptAll() {
+  localStorage.setItem('cookieChoiceMade', 'true');
+  hideBannerAndShowSettings();
+}
+
+function declineAll() {
+  localStorage.setItem('cookieChoiceMade', 'true');
+  hideBannerAndShowSettings();
+}
+
+function savePreferences() {
+  localStorage.setItem('cookieChoiceMade', 'true');
+  hideBannerAndShowSettings();
+}
+
+
+  document.getElementById('settings-button').addEventListener('click', () => {
+    document.getElementById('cookie-banner').style.display = 'block';
+    document.getElementById('settings-button').style.display = 'none';
+  });
+
+</script>
 </html>

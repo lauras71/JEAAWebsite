@@ -15,18 +15,19 @@ All other .html files handle the different pages that can be visualized in the w
 
 ## Team cooperation
 The workflow will be handled via Git. Confident that everyone is familiar and still remembers how to use it, but if that is not the case,
-here is a helpful link that might freshen up your mind: https://education.github.com/git-cheat-sheet-education.pdf
+here is a helpful link that might freshen up your mind: https://education.github.com/git-cheat-sheet-education.pdf 
+
 When committing your work, please always insert a commit message so that we have a work backlog for future record!
 
 Whether you are working on VScode or IntelliJ or other IDEs, it will be possible to add, commit and push your work from you branch to the main 
-either via IDEs extensions or via terminal. Choose whatever you like and more confortable with.
+either via IDEs extensions or via terminal. Choose whatever you like and whatever you are more confortable with.
 
 ## Project instantiation
 The repository of the website can initialized by following these simple steps:
 1. Copy the repository url (you can find it by clicking on the top right green botton of the repository)
 2. Clone the repository in your IDE either 
-    - via terminal run the command: git clone <url repo>
-    - via IDE command: open project from version control
+    - via terminal by running the command: git clone <url repo>
+    - via IDE built-in command: 'open project from version control'
 
 ## To keep in mind
 * Before starting working on the project, please create your own branch in order not to modify directly the main branch

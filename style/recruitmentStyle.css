@@ -2,6 +2,10 @@ body {
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .buttonApplication {
     padding: 12.5px 25px;
     color: #FFF;
@@ -197,9 +201,7 @@ h1 {
     color: #1578BE;
     font-size: 20px;
     font-style: normal;
-    font-weight: 900;
-    line-height: 54.687px; /* 273.436% */
-    
+    font-weight: 900;    
   }
 
   .step-text p {
@@ -242,7 +244,178 @@ h1 {
     gap: 90.68px;
     align-items: center;
   }
+/*
+  .faq-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+    */
 
+  .faq-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .faq-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .faq-column {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+  
+  .faq-item {
+    border: 1px solid #0074c2;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    
+  }
+  
+  .faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .faq-question {
+    background: none;
+    border: none;
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  .arrow-icon {
+    width: 18px;
+    height: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-answer {
+    display: none;
+    margin-top: 10px;
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 13px;
+  }
+
+  .help {
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 100% */
+    margin-left: 245px;
+    margin-top: 8px;
+  }
+
+  .card-row {
+    display: flex;
+    
+    justify-content: center;
+    gap: 32px; /* space between cards */
+    margin: 24px auto;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+  }
+
+  .profile-card {
+    width: 471.853px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    background: white;
+    height: 333px;
+    border-radius: 20.447px 20.447px 7.864px 7.864px;
+    border: 0.786px solid #C1C1C1;
+    background: #FFF;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .profile-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 27.53px;
+    margin-top: 240px;
+   
+  }
+  
+  .profile-details .text h2 {
+    color: #0075C4;
+    font-family: 'Montserrat';
+    font-size: 25.166px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18.874px; /* 75% */
+    margin: 0;
+  }
+  
+  .profile-details .text p {
+    margin: 6.29px 0 0 0;
+    color: #0075C4;
+    font-family: 'Montserrat';
+    font-size: 18.874px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.874px; /* 100% */
+  }
+
+
+  .profile-details .icons img {
+    width: 37px;
+    height: 27px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .icons img:nth-child(2) {
+    width: 42.467px;
+    height: 42.467px;
+  }
+
+  .icons {
+    display: flex;
+    padding-right: 27.53px;
+    align-items: center; /* Vertically align icons */
+    gap: 20px; /* Optional: space between icons */
+  }
+  
+  .icons img {
+    display: block;
+  }
+  
+  
+  
   
   
   

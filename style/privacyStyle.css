@@ -1,0 +1,34 @@
+.goBack {
+    display: block;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.privacyBody {
+    margin: 50px 250px;
+    text-align: justify;
+}
+
+.privacyTitle {
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-weight: 700;
+    color: #0078BF;
+}
+
+.privacyParagraph {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+ul {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
