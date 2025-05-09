@@ -15,12 +15,28 @@ All other .html files handle the different pages that can be visualized in the w
 
 ## Team cooperation
 The workflow will be handled via Git. Confident that everyone is familiar and still remembers how to use it, but if that is not the case,
-here is a helpful link that might freshen up your mind: https://education.github.com/git-cheat-sheet-education.pdf 
+here is a helpful link with the most used git commands that may come in handy: https://education.github.com/git-cheat-sheet-education.pdf 
 
 When committing your work, please always insert a commit message so that we have a work backlog for future record!
 
 Whether you are working on VScode or IntelliJ or other IDEs, it will be possible to add, commit and push your work from you branch to the main 
 either via IDEs extensions or via terminal. Choose whatever you like and whatever you are more confortable with.
+
+In the next section you will find the basic workflow on how to push your work via terminal.
+
+## Git commands to push your work
+When you change some files and you would like to make them visible to everyone, follow these commands to insert via terminal:
+
+* _git branch_: command to see the current branch you are in (always make sure to be in you own branch)
+* _git status_: command to check which files have been modified
+* _git add <nameOfFile>_: command to add a specific file to the staging and committing process
+* _git add ._: command to commit all modified files
+* _git push origin <yourBranchName>_: command to push your work in your branch
+* _git checkout main_: command to switch to the _main_ branch
+* _git pull origin <yourBranchName>_: command to take the changes just pushed in your branch
+* _git push origin main_: command to finally push and record your changes in the _main_ branch
+
+When you are done with the pushing process, go back to you branch!
 
 ## Project instantiation
 The repository of the website can initialized by following these simple steps:
