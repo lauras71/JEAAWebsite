@@ -29,12 +29,12 @@ When you change some files and you would like to make them visible to everyone, 
 
 * ``` git branch ```: command to see the current branch you are in (always make sure to be in you own branch)
 * ``` git status ```: command to check which files have been modified
-* ``` git add \< nameOfFile \> ```: command to add a specific file to the staging and committing process
+* ``` git add [nameOfFile] ```: command to add a specific file to the staging and committing process
 * ``` git add . ```: command to commit all modified files
-* ``` git commit -m "\< yourMessageGoesHere \>" ```: command to commit and leave a commit message
-* ``` git push origin \< yourBranchName \> ```: command to push your work in your branch
+* ``` git commit -m "[yourMessageGoesHere]" ```: command to commit and leave a commit message
+* ``` git push origin [ourBranchName] ```: command to push your work in your branch
 * ``` git checkout main ```: command to switch to the _main_ branch
-* ``` git pull origin \< yourBranchName \> ```: command to take the changes just pushed in your branch
+* ``` git pull origin [yourBranchName] ```: command to take the changes just pushed in your branch
 * ``` git push origin main ```: command to finally push and record your changes in the _main_ branch
 
 When you are done with the pushing process, go back to you branch!
@@ -43,7 +43,7 @@ When you are done with the pushing process, go back to you branch!
 The repository of the website can initialized by following these simple steps:
 1. Copy the repository url (you can find it by clicking on the top right green botton of the repository)
 2. Clone the repository in your IDE either 
-    - via terminal by running the command: ``` git clone \< url repo \> ```
+    - via terminal by running the command: ``` git clone [url repo] ```
     - via IDE built-in command: 'open project from version control'
 
 ## To keep in mind
