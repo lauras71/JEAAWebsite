@@ -27,15 +27,14 @@ In the next section you will find the basic workflow on how to push your work vi
 ## Git commands to push your work
 When you change some files and you would like to make them visible to everyone, follow these commands to insert via terminal:
 
-* ``` git branch ```: command to see the current branch you are in (always make sure to be in you own branch)
+* ``` git branch ```: command to see the current branch you are in (always make sure to be in you own branch when working on a new feature)
 * ``` git status ```: command to check which files have been modified
-* ``` git add [nameOfFile] ```: command to add a specific file to the staging and committing process
 * ``` git add . ```: command to commit all modified files
 * ``` git commit -m "[yourMessageGoesHere]" ```: command to commit and leave a commit message
 * ``` git push origin [ourBranchName] ```: command to push your work in your branch
-* ``` git checkout main ```: command to switch to the _main_ branch
-* ``` git pull origin [yourBranchName] ```: command to take the changes just pushed in your branch
-* ``` git push origin main ```: command to finally push and record your changes in the _main_ branch
+* ``` git checkout main ```: command to switch to the _main_ branch (go a git pull to see the branch is up-to-date)
+* ``` git merge [yourBranchName] ```: command to merge the two branches
+* The two branches are merged and do not forget to push the changes back in the _main_
 
 When you are done with the pushing process, go back to you branch!
 
