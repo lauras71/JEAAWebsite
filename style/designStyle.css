@@ -5,25 +5,114 @@
     }
 
     #desDiv {
-        background-color: #0078BF;
-        border-radius: 157.656px;
-        box-shadow: 0px 0px 10px  #0078BF;
+        background-color: #FFF;
+        border-radius: 107.712px;
+        border: 2px solid #D3F255;
         display: flex;  
         margin: auto;
         justify-content: center;  
         align-items: center; 
         padding-left: 10px;
-        width: 709px;
-        height: 100px;
+        width: 500px;
+        height: 80px;
     }
 
     h1 {
-        color: #FFF;
-        font-family: 'Montserrat';
-        font-size: 56.756px;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 38.776px;
         font-style: normal;
         font-weight: 900;
         line-height: normal;
     }
+
+    .card {
+        flex: 0 0 933px;
+        height: 771px;
+        width: 1264px;
+        background-color: white;
+        border-radius: 68.251px;
+        border: 1.365px solid #0078BF;
+        box-shadow: 0px 0px 10px #0078BF;
+        font-size: 64px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        height: 100%;
+    }
+    
+    .top-section {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+    
+    .imgTestimonial img {
+        width: 178;
+        height: 178;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    
+    .memberInfo h2 {
+        color: #0078BF;
+        font-family: Montserrat;
+        font-size: 43.68px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32.76px; /* 75% */
+    }
+    
+    .memberInfo p {
+        color: #0078BF;
+        font-family: Montserrat;
+        font-size: 32.76px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32.76px; /* 100% */
+    }
+    
+    .textHistory {
+        color: #0078BF;
+        font-family: 'Montserrat';
+        font-size: 20.142px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-left: 15px;
+    }
+
+    #welcome {
+        width: 568PX;
+        height: 64px;
+        background-color: #FFF;
+        border-radius: 25px;
+        border: 1px solid #0078BF;
+        background: #FFF;
+        margin: auto;
+        display: flex;              
+        justify-content: center;  
+        align-items: center; 
+    }
+
+    #welcome h1 {
+        color: #0078BF;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+    
 
 }    

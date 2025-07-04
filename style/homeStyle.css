@@ -7,16 +7,17 @@
     #welcome {
         width: 497px;
         height: 74px;
-        background-color: #0078BF;
+        background-color: #FFF;
         border-radius: 25px;
         margin: auto;
         display: flex;              
         justify-content: center;  
         align-items: center; 
+        box-shadow: 0px 0px 10px  #0078BF;
     }
 
     #welcome h1 {
-        color: #FFF;
+        color: #0078BF;
         font-family: 'Montserrat';
         font-size: 40px;
         font-style: normal;
@@ -51,14 +52,14 @@
     }
 
     .buttonTeam {
-        color: #FFF;
+        color: #000;
         font-family: 'Montserrat';
         font-size: 40px;
         font-style: normal;
         font-weight: 900;
         line-height: normal;
         border-radius: 25px;
-        background-color: #0078BF;
+        background-color: #D3F255;
         border: none;
         margin: auto;
         display: flex;              
@@ -66,19 +67,19 @@
         align-items: center; 
         text-decoration: none;
         cursor: pointer;
-        box-shadow: 0px 0px 10px  #0078BF;
+        
         padding: 15px 35px;
     }
 
     .buttonRecruitment {
-        color: #FFF;
+        color: #000;
         font-family: Montserrat;
         font-size: 40px;
         font-style: normal;
         font-weight: 900;
         line-height: normal;
         border-radius: 25px;
-        background-color: #0078BF;
+        background-color: #D3F255;
         border: none;
         margin: auto;
         display: flex;              
@@ -86,7 +87,6 @@
         align-items: center; 
         text-decoration: none;
         cursor: pointer;
-        box-shadow: 0px 0px 10px  #0078BF;
         padding: 15px 35px;
     }
 
@@ -98,6 +98,38 @@
         font-weight: bold;
         line-height: 54.687px; 
         margin-left: 150px;
+    }
+
+    .benefits {
+        display: flex;
+        flex-direction: row;
+        gap: 350px;
+        padding-left: 229px;
+    }
+
+    .benefitBox{
+        width: 179px;
+        height: 177px;
+        box-shadow: 0px 0px 10px  #0078BF;
+        border-radius: 25px;
+    }
+
+    .benefitText {
+        color: #1578BE;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 54.687px; /* 273.436% */
+    }
+
+    .benefitP {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 15.95px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
 
     #designBox {
@@ -180,14 +212,14 @@
     }
 
     .buttonPortfolio {
-        color: #FFF;
+        color: #000;
         font-family: Montserrat;
         font-size: 40px;
         font-style: normal;
         font-weight: 900;
         line-height: normal;
         border-radius: 25px;
-        background-color: #0078BF;
+        background-color: #D3F255;
         border: none;
         margin: auto;
         display: flex;              
@@ -195,7 +227,6 @@
         align-items: center; 
         text-decoration: none;
         cursor: pointer;
-        box-shadow: 0px 0px 10px  #0078BF;
         padding: 15px 35px;
     }
 

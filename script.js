@@ -11,6 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // Always load these
     promises.push(loadHTML("reusableComponents/motto.html", "#motto"));
     promises.push(loadHTML("reusableComponents/homeButton.html", "#homeButton"));
+    promises.push(loadHTML("reusableComponents/recrButton.html", "#recrButton"));
 
     Promise.all(promises).then(() => {
         applyTranslation(lang);

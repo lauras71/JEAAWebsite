@@ -27,7 +27,7 @@
       "requisiti": "Requirements",
       "req1": "Being UniBz student",
       "req2": "CV + portfolio for design area",
-      "req3": "Proficency in English",
+      "req3": "Proficiency in English",
       "selection": "Selection process",
       "positions": "Available positions",
       "help": "Can't find your answer?",
@@ -74,7 +74,8 @@
       "impressumTitle": "Legal and Physical Data",
       "impressum2": "Tax Code & VAT number: 03279910214",
       "impressum3": "",
-      "impressum4": ""
+      "impressum4": "",
+      "benefit3": "Student Experience"
     },
     "it": {
       "subtitle2": "Organizzazione",
@@ -177,7 +178,8 @@
       "impressumTitle": "Dati legali e fiscali",
       "impressum2": "Codice fiscale e P.IVA: 03279910214",
       "impressum3": "",
-      "impressum4": ""
+      "impressum4": "",
+      "benefit3": "Esperienza"
     },
     "de": {
       "subtitle2": "Organisation",
@@ -281,7 +283,8 @@
       "impressumTitle": "Rechtliche und physische Daten",
       "impressum2": "Steuernummer & USt-IdNr.: 03279910214",
       "impressum3": "",
-      "impressum4": ""
+      "impressum4": "",
+      "benefit3": "Erfahrung"
     }
 }
   
