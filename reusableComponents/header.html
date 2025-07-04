@@ -2,7 +2,7 @@
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   
   <style>
-    @media (min-width: 1024px) { 
+    @media (min-width: 1024px) {  
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -59,6 +59,7 @@
       transform: translateX(-50%);
       width: 193px;
     }
+    
 
     .menu a.active::after {
       content: '';
@@ -130,6 +131,112 @@
       width: 40px;
     }
   }
+
+  @media (max-width: 1023px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2.8rem;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 2.124px;
+  }
+
+  .menu a {
+    font-family: 'Montserrat';
+    font-size: 6.795px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #0078BF;
+    position: relative;
+    padding-bottom: 8px;
+    height: 2.124px;
+  }
+  .menu a.active {
+      font-weight: 700;
+      height: 2.124px;
+  }
+
+  .menu a::after {
+    content: '';
+    display: block;
+    height: 2.124pxpx;
+    background: #85BEE0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 31px;
+  }
+
+
+  .menu li:nth-child(2) a::after {
+    width: 82px;
+    height: 2.124px;
+  }
+  .menu li:nth-child(3) a::after {
+    height: 2.124px;
+  }
+  .menu li:nth-child(1) a::after {
+    height: 2.124px;
+  }
+
+  .menu a.active::after,
+  .menu li:nth-child(2) a.active::after {
+    background: #0078BF;
+    height: 2.124px;
+
+  }
+
+  .lang-switcher {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    margin-left: auto;
+    margin-top: 29px;
+  }
+
+  .lang-switcher a {
+    font-family: 'Montserrat';
+    font-size: 6.795px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0078BF;
+    position: relative;
+    padding-bottom: 8px;
+  }
+
+  .lang-switcher a::after {
+    content: '';
+    display: block;
+    height: 2.124px;
+    background: #85BEE0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+  }
+
+  .lang-switcher a.active::after {
+    background: #0078BF;
+  }
+}
+
+
+
 
   </style>
 </head>
