@@ -2,6 +2,7 @@
   <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <style>
+     @media (min-width: 1024px) {  
     #mainFooter {
       background-color: #ffffff;
       border-top: 1px solid #0078BF;
@@ -69,6 +70,76 @@
       width: 24px;
       margin-right: 10px;
     }
+  }
+
+  @media (max-width: 1023px) {
+    #mainFooter {
+      width: max-content;
+      border-top: 1px solid #0078BF;
+      font-family: sans-serif;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+    }
+  
+    .footer-logo {
+      width: 245px;
+      height: 236px;
+      margin-left: 40px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .footer-columns {
+      display: flex;
+      flex-direction: row;
+      gap: 150px;
+      flex-wrap: wrap;
+      margin-right: 150px;
+      margin-top: 40px;
+    }
+    
+    .footer-column {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .footer-column strong {
+      color: #0078BF;
+      font-family: "Noto Sans";
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    
+    .footer-column a {
+      color: #0078BF;
+      font-family: "Noto Sans";
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
+    }
+    
+    .footer-column a:hover {
+      text-decoration: underline;
+    }
+    
+    .social-icons a img {
+      width: 24px;
+      margin-right: 10px;
+    }
+
+  }
     
   </style>
 </head>

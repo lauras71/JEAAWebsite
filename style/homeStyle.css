@@ -584,7 +584,7 @@
         height: 294px;
         border: 1px solid #0078BF;
         margin: auto;
-        margin-left: 220px;
+        margin-left: 180px;
         display: flex;              
         justify-content: center;  
         align-items: center; 
@@ -622,6 +622,10 @@
         padding: 15px 35px;
         text-align: center;
     }
+
+    ::-webkit-scrollbar {
+        display: none;
+    } 
 
     
     
