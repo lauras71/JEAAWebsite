@@ -3,6 +3,8 @@
     .goBack {
         display: block;
         margin: 0 auto;
+        width: 245px;
+        height: 236px;
     }
 
     ::-webkit-scrollbar {
